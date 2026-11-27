@@ -14,7 +14,7 @@ public class OrderService {
 //    }
 
 
-
+// using setter method
     @Autowired
     public void setPaymentService(PaymentService paymentService) {
         this.paymentService = paymentService;
