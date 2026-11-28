@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OrderService {
+    @Autowired
     PaymentService paymentService;
 
 // this is constructor dependency injection
@@ -15,10 +16,10 @@ public class OrderService {
 
 
 // using setter method
-    @Autowired
-    public void setPaymentService(PaymentService paymentService) {
-        this.paymentService = paymentService;
-    }
+//    @Autowired
+//    public void setPaymentService(PaymentService paymentService) {
+//        this.paymentService = paymentService;
+//    }
 
     public void placed_order(){
         paymentService.pay();
